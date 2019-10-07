@@ -2706,8 +2706,10 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #8a4680;
-			color: #e2d1df;
+			background-color: #9e2828af;
+			/* background-color: #7e1818af; */
+			/* background-color: #9b1b1b9c; */
+			color: #ffffff;
 		}
 
 			.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
