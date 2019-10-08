@@ -1586,6 +1586,7 @@
 
 	html {
 		font-size: 13pt;
+		scroll-behavior: smooth;
 	}
 
 		@media screen and (max-width: 1680px) {
