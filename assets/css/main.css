@@ -1773,20 +1773,16 @@
 		text-align: left;
 	}
 
-	.alignleft {
-		float: left;
-	}
-
 	.align-center {
 		text-align: center;
 	}
 
+		.align-center iframe {
+			max-width: 100%;
+		}
+
 	.align-right {
 		text-align: right;
-	}
-
-	.alignright {
-		float: right;
 	}
 
 	.align-justify {
@@ -2347,6 +2343,7 @@
 		.image img {
 			border-radius: 2px;
 			display: block;
+			max-width: 100%;
 		}
 
 		.image.left, .image.right {
@@ -2472,6 +2469,12 @@
 				padding: 0 0.5rem 0 0;
 			}
 
+			ul.actions.navigation{
+				display: flex;
+				justify-content: space-between;
+				margin: 0;
+			} 
+
 			ul.actions.vertical li {
 				display: block;
 				padding: 1rem 0 0 0;
@@ -2526,7 +2529,7 @@
 				}
 
 					ul.actions li {
-						padding: 1rem 0 0 0;
+						/* padding: 1rem 0 0 0; */
 						display: block;
 						text-align: center;
 						width: 100%;
@@ -3326,7 +3329,7 @@
 			}
 
 			.wrapper.style3 header p {
-				color: #999999;
+				color: #ffffff;
 			}
 
 			.wrapper.style3 table tbody tr {
@@ -4026,7 +4029,7 @@
 /* Banner */
 
 	.banner {
-		background-color: #8a4680;
+		/* background-color: #8a4680; */
 		color: #e2d1df;
 		padding: 8em 0;
 		position: relative;
@@ -4187,7 +4190,7 @@
 				}
 
 			.banner > article h2 {
-				font-size: 7rem;
+				font-size: 5.5rem;
 				margin-bottom: 0;
 				color: #FFF;
 				font-weight: 300;
@@ -4198,7 +4201,7 @@
 				}
 
 			.banner > article p {
-				color: rgba(255, 255, 255, 0.65);
+				color: rgb(255, 255, 255);
 				text-transform: uppercase;
 				font-size: 1rem;
 				font-weight: 300;
