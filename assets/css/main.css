@@ -1823,6 +1823,9 @@
 	.box {
 		margin-bottom: 2rem;
 		background: #FFF;
+			/* padding:0.5px;
+			border:1.5px solid #9e2828af;
+			border-radius: 0px 60px 0px 60px; */
 	}
 
 		.box .image.fit {
