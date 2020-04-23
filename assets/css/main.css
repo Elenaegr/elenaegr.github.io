@@ -2957,6 +2957,10 @@
 				border-bottom-color: rgba(0, 0, 0, 0.15);
 			}
 
+			.wrapper.style2.timelinebackground {
+				background-color: #fff;
+			}
+
 			.wrapper.style2 .box {
 				border-color: rgba(0, 0, 0, 0.15);
 			}
@@ -3498,7 +3502,7 @@
 
 		.grid-style .box {
 			margin: 0;
-			height: 410px;
+			height: 460px;
 		}
 
 		@media screen and (max-width: 980px) {
@@ -4351,7 +4355,7 @@
 
 #conference-timeline {
 	position: relative;
-	max-width: 950px;
+	/* max-width: 950px; */
 	width: 100%;
 	margin: 0 auto;
   }
@@ -4445,7 +4449,8 @@
   .timeline-article .content-right {
 	position: relative;
 	width: auto;
-	border: 1px solid #ddd;
+	border: 1px solid #be6e6c;
+	border-radius: 5px;
 	background-color: #fff;
 	box-shadow: 0 1px 3px rgba(0,0,0,.03);
 	padding: 27px 25px;
@@ -4491,7 +4496,7 @@
 	top: 20px;
 	font-size: 23px;
 	font-family: "FontAwesome";
-	color: #fff;
+	color: #be6e6c;
   }
   .timeline-article .content-left:before {
 	content: "\f0da";
