@@ -1,9 +1,3 @@
-/*
-	Hielo by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
 var settings = {
 
 	banner: {
@@ -258,6 +252,11 @@ var settings = {
 			$body 		= $('body'),
 			$header 	= $('#header'),
 			$banner 	= $('.banner');
+			$about 	= $('#about');
+			$projects 	= $('#projects');
+			$conferencetimeline 	= $('#conference-timeline');
+			$contact 	= $('#contact');
+			$sitenavbar = $('.site-navbar ul li a');
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
@@ -307,9 +306,45 @@ var settings = {
 					enter:		function() { $header.addClass('alt'); },
 					leave:		function() { $header.removeClass('alt'); $header.addClass('reveal'); }
 				});
+			};
 
-			}
+			$about.scrollex({
+				// Set #about's color into pink on the header.
+				enter: function() { $sitenavbar.addClass('current'); },
+				leave: function() { $sitenavbar.removeClass('current'); }
+			  });
 
 	});
 
 })(jQuery);
+
+
+//menu 
+// define all UI variable
+const navToggler = document.querySelector('.nav-toggler');
+const navMenu = document.querySelector('.site-navbar ul');
+const navLinks = document.querySelectorAll('.site-navbar a');
+
+// load all event listners
+allEventListners();
+
+// functions of all event listners
+function allEventListners() {
+  // toggler icon click event
+  navToggler.addEventListener('click', togglerClick);
+  // nav links click event
+  navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
+}
+
+// togglerClick function
+function togglerClick() {
+  navToggler.classList.toggle('toggler-open');
+  navMenu.classList.toggle('open');
+}
+
+// navLinkClick function
+function navLinkClick() {
+  if(navMenu.classList.contains('open')) {
+    navToggler.click();
+  }
+}

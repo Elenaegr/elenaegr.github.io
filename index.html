@@ -5,6 +5,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/grid.css" />
 	<link rel="icon" type="image/png" href="images/favicon.png" />
 	<title>Elena's portfolio</title>
 </head>
@@ -12,9 +13,31 @@
 <body>
 
 	<!-- Header -->
-	<header id="header" class="alt">
-		<a href="#menu">Menu</a>
-	</header>
+	 <header id="header" class="alt">
+		<div class="navbar-area">
+			<div class="container-navbar">
+			<nav class="site-navbar">
+				<!-- site logo -->
+				<a href="#banner" class="site-logo">EGR</a>
+	
+				<!-- site menu/nav -->
+				<ul>
+					<li><a href="#banner">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<!-- <li><a href="#about" class="current">About</a></li> -->
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#conference-timeline">Career timeline</a></li>
+					<li><a href="#footer">Contact</a></li>
+				</ul>
+	
+				<!-- nav-toggler for mobile version only -->
+				<button class="nav-toggler">
+				<span></span>
+				</button>
+			</nav>
+			</div>
+		</div>
+	</header> 
 
 	<!-- Nav -->
 	<nav id="menu">
@@ -28,7 +51,7 @@
 	</nav>
 
 	<!-- Banner -->
-	<section class="banner full">
+	<section id="banner" class="banner full">
 		<article>
 			<img src="images/main2.png" alt="" />
 			<div class="inner">
@@ -57,8 +80,8 @@
 					I am 27 years old and I am from Spain. I studied a Bachelor's Degree
 					in Telecommunications engineering at the University of Granada and afterwards I worked
 					for almost 3 years mainly in the field of Sotfware Development and Operations.
-					However, I would love to focus my future career in the Physical Interaction Design
-					subject area and that's why I am currently attending the Interactive Media Technology
+					However, I would love to focus my future career in the Physical Interaction Design 
+					area and that's why I am currently attending the Interactive Media Technology
 					master's program at KTH Royal Institute of Technology in Stockholm, Sweden. I am passionate about
 					learning new things every day and understanding how everything works at a physical low level.
 					I feel ready to embrace the technologies of the future on a rational and sustainable way.
@@ -67,125 +90,78 @@
 		</div>
 	</section>
 
-	<!-- One -->
+	<!-- Projects -->
 	<section id="projects" class="wrapper style2">
 		<header class="align-center">
-			<h2>Portfolio projects</h2>
-			<!-- <p>Projects</p> -->
+			<h2>Projects portfolio</h2>
 		</header>
+
+		<div class="grid">
+					
+		<!-- Email sender -->
+			<figure class="effect-chico">
+				<img src="images/resizedhpi2.png" alt=""/>
+				<figcaption>
+					<h2 style="color: white;">The Email <span>Sender</span></h2>
+					<p>An interactive human-powered device to perfom easy daily tasks</p>
+					<a href="hpi.html">View more</a>
+				</figcaption>			
+			</figure>
+					
+		<!-- Memory game -->
+			<figure class="effect-chico">
+				<img src="images/haptic.png" alt=""/>
+				<figcaption>
+					<h2>Haptic Memory  <span>Game</span></h2>
+					<p>The traditional memory game adapted to a haptic device</p>
+					<a href="hapticgame.html">View more</a>
+				</figcaption>			
+			</figure>
+					
+		<!-- Conversational AI -->
+			<figure class="effect-chico">
+				<img src="images/furhatmainscreen.png" alt=""/>
+				<figcaption>
+					<h2>Conversational <span>AI</span></h2>
+					<p>From social robots to smart speakers: cooking with the help of a conversational agent</p>
+					<a href="conversationalagents.html">View more</a>
+				</figcaption>			
+			</figure>
+					
+		<!-- Fruitine -->
+			<figure class="effect-chico">
+				<img src="images/fruitine2.png" alt=""/>
+				<figcaption>
+					<h2>The Interactive  <span>Fruitine</span></h2>
+					<p>Introduce the minimum servings of fruit to your healthy routine</p>
+					<a href="fruitine.html">View more</a>
+				</figcaption>			
+			</figure>
+
+		<!-- Talking tour -->
+			<figure class="effect-chico">
+				<img src="images/talkingtour2.png" alt=""/>
+				<figcaption>
+					<h2>The Talking tour  <span>App</span></h2>
+					<p>The interactive app to walk, tour and sigthseeing a city through sound navigation</p>
+					<a href="talkingtour.html">View more</a>
+				</figcaption>			
+			</figure>
+
+		<!-- Lyric searching app -->
+			<figure class="effect-chico">
+				<img src="images/lyric.png" alt=""/>
+				<figcaption>
+					<h2>The Lyric searching  <span>App</span></h2>
+					<p>Find the liyrics you want, save them to your favorite list and translate them to your
+						desired language</p>
+					<a href="lyricsearch.html">View more</a>
+				</figcaption>			
+			</figure>
+
+		</div>
 		<div class="inner">
-			<div class="grid-style">
-				<div>
-					<div class="box border">
-						<div class="image fit">
-							<img src="images/resizedhpi.jpg" alt="" />
-						</div>
-						<div class="content">
-							<header class="align-center">
-								<!-- <p>maecenas sapien feugiat ex purus</p> -->
-								<h3>The Email Sender</h3>
-							</header>
-							<p> An interactive human-powered device to perfom an easy daily task: send emails.</p>
-							<footer class="align-center">
-								<a href="hpi.html" class="button alt">Learn More</a>
-							</footer>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<div class="box">
-						<div class="image fit">
-							<img src="images/resizedhaptic.jpg" alt="" />
-						</div>
-						<div class="content">
-							<header class="align-center">
-								<!-- <p>maecenas sapien feugiat ex purus</p> -->
-								<h3>Haptic Memory Game</h3>
-							</header>
-							<p> The traditional memory game adapted to play with a haptic device.</p>
-							<footer class="align-center">
-								<a href="hapticgame.html" class="button alt">Learn More</a>
-							</footer>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<div class="box">
-						<div class="image fit">
-							<img src="images/resizedfurhat.png" alt="" />
-						</div>
-						<div class="content">
-							<header class="align-center">
-								<!-- <p>maecenas sapien feugiat ex purus</p> -->
-								<h3>Conversational AI</h3>
-							</header>
-							<p> From social robots to smart speakers: cooking with the help of a conversational agent.
-							</p>
-							<footer class="align-center">
-								<a href="conversationalagents.html" class="button alt">Learn More</a>
-							</footer>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<div class="box">
-						<div class="image fit">
-							<img src="images/resizedfruitine.jpg" alt="" />
-						</div>
-						<div class="content">
-							<header class="align-center">
-								<!-- <p>mattis elementum sapien pretium tellus</p> -->
-								<h3>The Fruitine</h3>
-							</header>
-							<p> The Interactive Fruit Bowl: introduce the minimum servings of fruit to your healthy
-								routine.</p>
-							<footer class="align-center">
-								<a href="fruitine.html" class="button alt">Learn More</a>
-							</footer>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<div class="box">
-						<div class="image fit">
-							<img src="images/resizedwalking.jpg" alt="" />
-						</div>
-						<div class="content">
-							<header class="align-center">
-								<!-- <p>maecenas sapien feugiat ex purus</p> -->
-								<h3>The Talking Tour App</h3>
-							</header>
-							<p> The interactive app to walk, tour and sigthseeing a city through sound navigation.</p>
-							<footer class="align-center">
-								<a href="talkingtour.html" class="button alt">Learn More</a>
-							</footer>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<div class="box">
-						<div class="image fit">
-							<img src="images/resizedlyric.jpg" alt="" />
-						</div>
-						<div class="content">
-							<header class="align-center">
-								<!-- <p>maecenas sapien feugiat ex purus</p> -->
-								<h3>The Lyric Searching App</h3>
-							</header>
-							<p> Find the liyrics you want, save them to your favorite list and translate them to your
-								desired language.</p>
-							<footer class="align-center">
-								<a href="lyricsearch.html" class="button alt">Learn More</a>
-							</footer>
-						</div>
-					</div>
-				</div>
-
+			<div class="grid-style">	
 			</div>
 		</div>
 	</section>
@@ -386,6 +362,7 @@
 	<footer id="footer">
 		<div class="container">
 			<ul class="icons">
+				<p style="color:#9d9d9d">Contact info:</p>
 				<li><a href="https://www.linkedin.com/in/elena-gonzalez-rabal/" target="_blank"
 						class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 				<li><a href="mailto:elenaglezrabal@gmail.com" class="icon fa-envelope-o"><span
@@ -396,7 +373,7 @@
 						class="icon fa-file-text-o"><span class="label">CV</span></a></li>
 			</ul>
 		</div>
-		<div class="copyright">
+		<div style="color:#9d9d9d" class="copyright">
 			&copy; Untitled. All rights reserved.
 		</div>
 	</footer>
