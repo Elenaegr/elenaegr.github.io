@@ -2350,12 +2350,12 @@
 			max-width: 100%;
 		}
 
-		.image.left, .image.right {
+		/* .image.left, .image.right {
 			max-width: 35%;
-		}
+		} */
 
 			.image.left img, .image.right img {
-				width: 100%;
+				width: 200px;
 			}
 
 		.image.left {
