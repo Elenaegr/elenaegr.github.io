@@ -1144,7 +1144,7 @@ figure.effect-chico h2 {
 
 figure.effect-chico p {
   margin: 0 auto;
-  max-width: 200px;
+  max-width: 40rem;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
