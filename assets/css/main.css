@@ -86,6 +86,22 @@
 		width: 80rem;
 	}
 
+	.typing-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.3rem;
+		margin: 0 0 0.7rem 0;
+  	}
+   .input-cursor {
+		display: inline-block;
+		width: 2px;
+		height: 22px;
+		background-color: white;
+		margin-left: 8px;
+		animation: blink .6s linear infinite alternate;
+  	}
+
 	@media screen and (max-width: 1680px) {
 
 		.container.\31 25\25 {
@@ -3752,6 +3768,13 @@
 			opacity: 1;
 		}
 	}
+
+	@keyframes blink {
+		0% {opacity: 1;}
+		40% {opacity: 1;}
+		60% {opacity: 0;}
+		100% {opacity: 0;}
+	  }
 
 	#header {
 		background: rgba(0, 0, 0, 0.89);
